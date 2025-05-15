@@ -33,9 +33,9 @@ with tab1:
 
     # Đọc dữ liệu
     try:
-        df_kpi = pd.read_excel("kf_coffee.csv", sheet_name="Trang tính1")
+        df_kpi = pd.read_excel("kf_coffee (1).xlsx", sheet_name="Trang tính1")
     except:
-        st.error("Không tìm thấy file dữ liệu kf_coffee.csv")
+        st.error("Không tìm thấy file dữ liệu kf_coffee (1).xlsx")
         st.stop()
 
     # Hàm parse date
@@ -190,7 +190,7 @@ with tab3:
     ]
     
     try:
-        df_slow = pd.read_excel("kf_coffee.csv", sheet_name="Trang tính1")
+        df_slow = pd.read_excel("kf_coffee (1).xlsx", sheet_name="Trang tính1")
         df_slow = df_slow[df_slow["name"].isin(slow_selling_products)].copy()
     except:
         st.error("Không tìm thấy file dữ liệu")
